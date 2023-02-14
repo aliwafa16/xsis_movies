@@ -1,0 +1,42 @@
+{
+  "name": "xsis_movie",
+  "version": "1.0.0",
+  "description": "xsis movie restfull api",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require babel-register src/tests/*.js --exit",
+    "dev": "nodemon --exec babel-node --presets babel-preset-env src/index.js",
+    "start": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliwafa16/xsis_movie.git"
+  },
+  "keywords": [
+    "xsis",
+    "movie",
+    "resfulll",
+    "api"
+  ],
+  "author": "Muhamad Aliwafa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliwafa16/xsis_movie/issues"
+  },
+  "homepage": "https://github.com/aliwafa16/xsis_movie#readme",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^6.14.3",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.28.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.3.7",
+    "chai-http": "^4.3.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^2.0.20"
+  }
+}
